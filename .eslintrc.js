@@ -42,7 +42,7 @@ module.exports = {
       optionalDependencies: false,
       peerDependencies: true,
     }],
-    'import/extensions': ['error', 'always', {
+    'import/extensions': ['error', 'ignorePackages', {
       js: 'never',
       ts: 'never',
       vue: 'always',
@@ -146,6 +146,7 @@ module.exports = {
       ],
     }],
     // 'lodash/import-scope': [2, 'method'],
+    '@typescript-eslint/ban-types': 'off',
     '@typescript-eslint/no-namespace': 'off',
     '@typescript-eslint/interface-name-prefix': 'off',
     '@typescript-eslint/ban-ts-comment': 'off',
@@ -163,12 +164,20 @@ module.exports = {
     }],
   },
   overrides: [{
+
     files: [
       '**/__tests__/*.{j,t}s?(x)',
       '**/tests/unit/**/*.spec.{j,t}s?(x)'
     ],
     env: {
       jest: true
+    },
+    rules: {
+      'import/extensions': ['error', 'ignorePackages', {
+        js: 'never',
+        ts: 'never',
+        vue: 'always',
+      }],
     }
   }]
 }

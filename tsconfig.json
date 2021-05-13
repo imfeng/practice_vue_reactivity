@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "incremental": true,
+    "tsBuildInfoFile": ".cache/.tsbuildinfo",
+    "target": "es2019",
     "module": "esnext",
     "strict": true,
     "jsx": "preserve",
@@ -32,9 +34,13 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "tests/**/*.ts",
-    "tests/**/*.tsx"
+    "tests/**/*.tsx",
   ],
   "exclude": [
+    "dist",
+    "build",
+    ".cache",
+    ".vscode",
     "node_modules"
   ]
 }

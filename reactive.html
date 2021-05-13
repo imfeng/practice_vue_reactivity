@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reactive</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script>
+        const { defineComponent, createApp, reactive, watch, watchEffect, ref } = Vue;
+   
+        // A store
+        const bStore = reactive({
+            matches: [{id: 123,}, {id: 456}]
+        })
+        const setRandomMatches = () => {
+            const randomNum = parseInt(Math.random() * 10);
+            const matches = new Array(randomNum).fill(0).map((_, i) => ({id: i}));
+            bStore.matches = matches;
+            return matches;
+        }
+        const foo = ref('aaa');
+
+    
+        const App = defineComponent({
+            name: 'App',
+            template: `<h1>{{state}}</h1>`,
+            setup () {
+                const state = reactive({
+                    count: 0,
+                });
+                // watch(state, (newState, oldState) => {
+                //     console.log(`watch: state =`, newState)
+                //     console.log(`watch: foo =`, foo.value)
+                // })
+
+                watchEffect(() => {
+                    console.log(`watch: state =`, state.count)
+                    console.log(`watch: foo =`, foo.value)
+                }, {
+                    onTrack(e) {
+                        debugger
+                    },
+                    onTrigger(e) {
+                        debugger
+                    },
+
+                });
+
+                watch(bStore, (newBStore, oldBStore) => {
+                    console.log(`watch: bStore =`, newBStore)
+                    state.count = newBStore.matches?.length;
+                })
+
+                // setTimeout(() => {
+                //     const matches = setRandomMatches();
+                //     console.log(matches)
+                // }, 2000)
+                // setTimeout(() => {
+                //     const matches = setRandomMatches();
+                //     console.log(matches)
+                // }, 2000)
+            
+                return {
+                    state
+                };
+            }
+        });
+        createApp(App).mount('#app')
+    
+    </script>
+</body>
+</html>
