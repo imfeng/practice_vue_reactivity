@@ -1,4 +1,7 @@
-import { useProduct, useProduct2, useProduct3, useProduct4, useReactiveUtil } from '../../src/practice/reactivity.chap1';
+import {
+  useProduct, useProduct2, useProduct3,
+  useProduct4, useReactiveUtil
+} from '../../src/practice/reactivity_chap1';
 describe('Reactivity chapter 1', () => {
   it('simple effect', () => {
     const { product, effect } = useProduct(5, 2);

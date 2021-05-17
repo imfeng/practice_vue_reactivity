@@ -1,5 +1,10 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { getProduct, getProductAndGetTotalFn, getProductByAccessors, getProductByProxy, getProductByProxyForcePrice10, getProductHasPrivate, getStrongTypeProduct } from '../../src/practice/reactivity_vanilla';
+import {
+  getProduct, getProductAndGetTotalFn,
+  getProductByAccessors, getProductByProxy,
+  getProductByProxyForcePrice10, getProductHasPrivate,
+  getStrongTypeProduct
+} from '../../src/practice/reactivity_vanilla';
 
 describe('try to use reactive data in vanilla js', () => {
   it('verify total: simple calculate', () => {

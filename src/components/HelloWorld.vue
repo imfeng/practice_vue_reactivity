@@ -59,32 +59,32 @@ export default defineComponent({
       selectedId.value = id;
     };
 
-    const tmp1 = ref(123);
-    const tmp2 = ref(2);
+    // const tmp1 = ref(123);
+    // const tmp2 = ref(2);
 
-    watchEffect(async(onInvalidate) => {
-      const now = selectedId.value;
-      console.log(`changed: ${now}`);
-      const { promise, timeoutId } = delayData({
-        id: now,
-        level: now * tmp1.value * tmp2.value
-      });
-      onInvalidate(() => {
-        console.log('onInvalidate! ', now);
-        clearTimeout(timeoutId);
-      });
-      const result = await promise;
-      console.log(`result: ${now}`);
-      console.log(result.id);
-      userDetail.value = result;
-    }, {
-      onTrack(e) {
-        debugger;
-      },
-      onTrigger(e) {
-        debugger;
-      }
-    });
+    // watchEffect(async(onInvalidate) => {
+    //   const now = selectedId.value;
+    //   console.log(`changed: ${now}`);
+    //   const { promise, timeoutId } = delayData({
+    //     id: now,
+    //     level: now * tmp1.value * tmp2.value
+    //   });
+    //   onInvalidate(() => {
+    //     console.log('onInvalidate! ', now);
+    //     clearTimeout(timeoutId);
+    //   });
+    //   const result = await promise;
+    //   console.log(`result: ${now}`);
+    //   console.log(result.id);
+    //   userDetail.value = result;
+    // }, {
+    //   onTrack(e) {
+    //     debugger;
+    //   },
+    //   onTrigger(e) {
+    //     debugger;
+    //   }
+    // });
 
     // watch(selectedId, async(newId, oldId, onInvalidate) => {
     //   // const now = selectedId.value;

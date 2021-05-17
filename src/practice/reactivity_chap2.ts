@@ -28,7 +28,7 @@ export function useProductByProxy(price: number, quantity: number) {
   };
 }
 
-export const { track, trigger, effect } = useReactiveUtil();
+export const { track, trigger, effect, ref, computed } = useReactiveUtil();
 
 export function useReactiveProduct(price: number, quantity: number) {
   const product = {
@@ -130,11 +130,17 @@ export function useReactiveUtil() {
     return r;
   }
 
-  // function computed(getter: Function) {
+  function computed(getter: Function) {
+    const result = ref(null); // Create a new reactive reference
 
-  // }
+    effect(() => (result.value = getter())); // Set this value equal to the return value of the getter
+
+    return result; // return the reactive reference
+  }
 
   return {
+    computed,
+    ref,
     effect,
     track,
     trigger

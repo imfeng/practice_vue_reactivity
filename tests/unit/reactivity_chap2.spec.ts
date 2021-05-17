@@ -1,4 +1,8 @@
-import { useProductByProxy, useReactiveProduct, effect } from '../../src/practice/reactivity.chap2';
+import {
+  useProductByProxy, useReactiveProduct,
+  effect, ref, computed
+} from '../../src/practice/reactivity_chap2';
+
 describe('Reactivity chapter 2', () => {
   it('verify proxy result', () => {
     // arr: Array<{price: number, quantity: number}>
@@ -33,6 +37,27 @@ describe('Reactivity chapter 2', () => {
     product.price = 12;
     // trigger(product, 'price');
     expect(total).toEqual(24);
+  });
+
+  it('test ref', () => {
+    const foo = ref(5);
+
+    expect(foo.value).toEqual(5);
+    foo.value = 1;
+    expect(foo.value).toEqual(1);
+  });
+
+  it('test computed', () => {
+    const price = ref(5);
+    const quantity = ref(2);
+    const comp = computed(() => price.value * quantity.value);
+    expect(comp.value).toEqual(10);
+
+    price.value = 10;
+    expect(comp.value).toEqual(20);
+
+    quantity.value = 3;
+    expect(comp.value).toEqual(30);
   });
 });
 
