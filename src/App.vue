@@ -12,8 +12,7 @@ export default defineComponent({
   components: {
     HelloWorld
   },
-  setup () {
-    const a = '123';
+  setup() {
     return {
 
     };

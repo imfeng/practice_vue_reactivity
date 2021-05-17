@@ -1,0 +1,804 @@
+{
+  "program": {
+    "fileInfos": {
+      "../node_modules/typescript/lib/lib.es5.d.ts": {
+        "version": "9622e8bd7cc72a7dab819a8011ecbf81d443638082e5cb99ecf2e75ff56ffc9d",
+        "signature": "9622e8bd7cc72a7dab819a8011ecbf81d443638082e5cb99ecf2e75ff56ffc9d",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2015.d.ts": {
+        "version": "dc47c4fa66b9b9890cf076304de2a9c5201e94b740cffdf09f87296d877d71f6",
+        "signature": "dc47c4fa66b9b9890cf076304de2a9c5201e94b740cffdf09f87296d877d71f6",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/typescript/lib/lib.es2016.d.ts": {
+        "version": "7a387c58583dfca701b6c85e0adaf43fb17d590fb16d5b2dc0a2fbd89f35c467",
+        "signature": "7a387c58583dfca701b6c85e0adaf43fb17d590fb16d5b2dc0a2fbd89f35c467",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/typescript/lib/lib.es2017.d.ts": {
+        "version": "8a12173c586e95f4433e0c6dc446bc88346be73ffe9ca6eec7aa63c8f3dca7f9",
+        "signature": "8a12173c586e95f4433e0c6dc446bc88346be73ffe9ca6eec7aa63c8f3dca7f9",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/typescript/lib/lib.es2018.d.ts": {
+        "version": "5f4e733ced4e129482ae2186aae29fde948ab7182844c3a5a51dd346182c7b06",
+        "signature": "5f4e733ced4e129482ae2186aae29fde948ab7182844c3a5a51dd346182c7b06",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/typescript/lib/lib.es2019.d.ts": {
+        "version": "e6b724280c694a9f588847f754198fb96c43d805f065c3a5b28bbc9594541c84",
+        "signature": "e6b724280c694a9f588847f754198fb96c43d805f065c3a5b28bbc9594541c84",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/typescript/lib/lib.es2020.d.ts": {
+        "version": "e21c071ca3e1b4a815d5f04a7475adcaeea5d64367e840dd0154096d705c3940",
+        "signature": "e21c071ca3e1b4a815d5f04a7475adcaeea5d64367e840dd0154096d705c3940",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/typescript/lib/lib.esnext.d.ts": {
+        "version": "fc7a21dd3ee27fd0a9ff1c46534efcd9c3cec51a445b479bb326d871c0aa8302",
+        "signature": "fc7a21dd3ee27fd0a9ff1c46534efcd9c3cec51a445b479bb326d871c0aa8302",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/typescript/lib/lib.dom.d.ts": {
+        "version": "abadddbf660adeec27e9a56584907d52fa1d6e1e1dc49f639a921baa951b7a84",
+        "signature": "abadddbf660adeec27e9a56584907d52fa1d6e1e1dc49f639a921baa951b7a84",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.dom.iterable.d.ts": {
+        "version": "d42f4141bd9ce82b4e2902f26acb00c183e321be19a38bbc0e76a922c1724c94",
+        "signature": "d42f4141bd9ce82b4e2902f26acb00c183e321be19a38bbc0e76a922c1724c94",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.scripthost.d.ts": {
+        "version": "097a57355ded99c68e6df1b738990448e0bf170e606707df5a7c0481ff2427cd",
+        "signature": "097a57355ded99c68e6df1b738990448e0bf170e606707df5a7c0481ff2427cd",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2015.core.d.ts": {
+        "version": "46ee15e9fefa913333b61eaf6b18885900b139867d89832a515059b62cf16a17",
+        "signature": "46ee15e9fefa913333b61eaf6b18885900b139867d89832a515059b62cf16a17",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2015.collection.d.ts": {
+        "version": "43fb1d932e4966a39a41b464a12a81899d9ae5f2c829063f5571b6b87e6d2f9c",
+        "signature": "43fb1d932e4966a39a41b464a12a81899d9ae5f2c829063f5571b6b87e6d2f9c",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2015.generator.d.ts": {
+        "version": "cdccba9a388c2ee3fd6ad4018c640a471a6c060e96f1232062223063b0a5ac6a",
+        "signature": "cdccba9a388c2ee3fd6ad4018c640a471a6c060e96f1232062223063b0a5ac6a",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2015.iterable.d.ts": {
+        "version": "8b2a5df1ce95f78f6b74f1a555ccdb6baab0486b42d8345e0871dd82811f9b9a",
+        "signature": "8b2a5df1ce95f78f6b74f1a555ccdb6baab0486b42d8345e0871dd82811f9b9a",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2015.promise.d.ts": {
+        "version": "2bb4b3927299434052b37851a47bf5c39764f2ba88a888a107b32262e9292b7c",
+        "signature": "2bb4b3927299434052b37851a47bf5c39764f2ba88a888a107b32262e9292b7c",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2015.proxy.d.ts": {
+        "version": "7207e317a2cb07a177e7d963ab7b8c0e85dde7f9ddb50351f830239bf597569e",
+        "signature": "7207e317a2cb07a177e7d963ab7b8c0e85dde7f9ddb50351f830239bf597569e",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2015.reflect.d.ts": {
+        "version": "cb609802a8698aa28b9c56331d4b53f590ca3c1c3a255350304ae3d06017779d",
+        "signature": "cb609802a8698aa28b9c56331d4b53f590ca3c1c3a255350304ae3d06017779d",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2015.symbol.d.ts": {
+        "version": "3013574108c36fd3aaca79764002b3717da09725a36a6fc02eac386593110f93",
+        "signature": "3013574108c36fd3aaca79764002b3717da09725a36a6fc02eac386593110f93",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": {
+        "version": "9d122b7e8c1a5c72506eea50c0973cba55b92b5532d5cafa8a6ce2c547d57551",
+        "signature": "9d122b7e8c1a5c72506eea50c0973cba55b92b5532d5cafa8a6ce2c547d57551",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2016.array.include.d.ts": {
+        "version": "3be5a1453daa63e031d266bf342f3943603873d890ab8b9ada95e22389389006",
+        "signature": "3be5a1453daa63e031d266bf342f3943603873d890ab8b9ada95e22389389006",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2017.object.d.ts": {
+        "version": "17bb1fc99591b00515502d264fa55dc8370c45c5298f4a5c2083557dccba5a2a",
+        "signature": "17bb1fc99591b00515502d264fa55dc8370c45c5298f4a5c2083557dccba5a2a",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": {
+        "version": "7ce9f0bde3307ca1f944119f6365f2d776d281a393b576a18a2f2893a2d75c98",
+        "signature": "7ce9f0bde3307ca1f944119f6365f2d776d281a393b576a18a2f2893a2d75c98",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2017.string.d.ts": {
+        "version": "6a6b173e739a6a99629a8594bfb294cc7329bfb7b227f12e1f7c11bc163b8577",
+        "signature": "6a6b173e739a6a99629a8594bfb294cc7329bfb7b227f12e1f7c11bc163b8577",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2017.intl.d.ts": {
+        "version": "12a310447c5d23c7d0d5ca2af606e3bd08afda69100166730ab92c62999ebb9d",
+        "signature": "12a310447c5d23c7d0d5ca2af606e3bd08afda69100166730ab92c62999ebb9d",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": {
+        "version": "b0124885ef82641903d232172577f2ceb5d3e60aed4da1153bab4221e1f6dd4e",
+        "signature": "b0124885ef82641903d232172577f2ceb5d3e60aed4da1153bab4221e1f6dd4e",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts": {
+        "version": "0eb85d6c590b0d577919a79e0084fa1744c1beba6fd0d4e951432fa1ede5510a",
+        "signature": "0eb85d6c590b0d577919a79e0084fa1744c1beba6fd0d4e951432fa1ede5510a",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2018.asynciterable.d.ts": {
+        "version": "a40c4d82bf13fcded295ac29f354eb7d40249613c15e07b53f2fc75e45e16359",
+        "signature": "a40c4d82bf13fcded295ac29f354eb7d40249613c15e07b53f2fc75e45e16359",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2018.intl.d.ts": {
+        "version": "df9c8a72ca8b0ed62f5470b41208a0587f0f73f0a7db28e5a1272cf92537518e",
+        "signature": "df9c8a72ca8b0ed62f5470b41208a0587f0f73f0a7db28e5a1272cf92537518e",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2018.promise.d.ts": {
+        "version": "bb2d3fb05a1d2ffbca947cc7cbc95d23e1d053d6595391bd325deb265a18d36c",
+        "signature": "bb2d3fb05a1d2ffbca947cc7cbc95d23e1d053d6595391bd325deb265a18d36c",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2018.regexp.d.ts": {
+        "version": "c80df75850fea5caa2afe43b9949338ce4e2de086f91713e9af1a06f973872b8",
+        "signature": "c80df75850fea5caa2afe43b9949338ce4e2de086f91713e9af1a06f973872b8",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2019.array.d.ts": {
+        "version": "9d57b2b5d15838ed094aa9ff1299eecef40b190722eb619bac4616657a05f951",
+        "signature": "9d57b2b5d15838ed094aa9ff1299eecef40b190722eb619bac4616657a05f951",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2019.object.d.ts": {
+        "version": "6c51b5dd26a2c31dbf37f00cfc32b2aa6a92e19c995aefb5b97a3a64f1ac99de",
+        "signature": "6c51b5dd26a2c31dbf37f00cfc32b2aa6a92e19c995aefb5b97a3a64f1ac99de",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2019.string.d.ts": {
+        "version": "93544ca2f26a48716c1b6c5091842cad63129daac422dfa4bc52460465f22bb1",
+        "signature": "93544ca2f26a48716c1b6c5091842cad63129daac422dfa4bc52460465f22bb1",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2019.symbol.d.ts": {
+        "version": "2ad234885a4240522efccd77de6c7d99eecf9b4de0914adb9a35c0c22433f993",
+        "signature": "2ad234885a4240522efccd77de6c7d99eecf9b4de0914adb9a35c0c22433f993",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2020.bigint.d.ts": {
+        "version": "7b5a10e3c897fabece5a51aa85b4111727d7adb53c2734b5d37230ff96802a09",
+        "signature": "7b5a10e3c897fabece5a51aa85b4111727d7adb53c2734b5d37230ff96802a09",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2020.promise.d.ts": {
+        "version": "7435b75fdf3509622e79622dbe5091cf4b09688410ee2034e4fc17d0c99d0862",
+        "signature": "7435b75fdf3509622e79622dbe5091cf4b09688410ee2034e4fc17d0c99d0862",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2020.sharedmemory.d.ts": {
+        "version": "e7e8e1d368290e9295ef18ca23f405cf40d5456fa9f20db6373a61ca45f75f40",
+        "signature": "e7e8e1d368290e9295ef18ca23f405cf40d5456fa9f20db6373a61ca45f75f40",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2020.string.d.ts": {
+        "version": "faf0221ae0465363c842ce6aa8a0cbda5d9296940a8e26c86e04cc4081eea21e",
+        "signature": "faf0221ae0465363c842ce6aa8a0cbda5d9296940a8e26c86e04cc4081eea21e",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts": {
+        "version": "936d7d2e8851af9ccfa5333b15e877a824417d352b1d7fd06388639dc69ef80a",
+        "signature": "936d7d2e8851af9ccfa5333b15e877a824417d352b1d7fd06388639dc69ef80a",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.es2020.intl.d.ts": {
+        "version": "31e8df2398e328077079c17ea4f1664bad0a34adf8b0608837e504e310e329a1",
+        "signature": "31e8df2398e328077079c17ea4f1664bad0a34adf8b0608837e504e310e329a1",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.esnext.intl.d.ts": {
+        "version": "89bf2b7a601b73ea4311eda9c41f86a58994fec1bee3b87c4a14d68d9adcdcbd",
+        "signature": "89bf2b7a601b73ea4311eda9c41f86a58994fec1bee3b87c4a14d68d9adcdcbd",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.esnext.string.d.ts": {
+        "version": "fb4416144c1bf0323ccbc9afb0ab289c07312214e8820ad17d709498c865a3fe",
+        "signature": "fb4416144c1bf0323ccbc9afb0ab289c07312214e8820ad17d709498c865a3fe",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.esnext.promise.d.ts": {
+        "version": "cd6efb9467a8b6338ece2e2855e37765700f2cd061ca54b01b33878cf5c7677e",
+        "signature": "cd6efb9467a8b6338ece2e2855e37765700f2cd061ca54b01b33878cf5c7677e",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/typescript/lib/lib.esnext.weakref.d.ts": {
+        "version": "1e61418f41d404e744b6536af9f8c6f6674dd4d54c12335cd0c4f7eded69cf3f",
+        "signature": "1e61418f41d404e744b6536af9f8c6f6674dd4d54c12335cd0c4f7eded69cf3f",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/tslib/tslib.d.ts": {
+        "version": "4576b4e61049f5ffd7c9e935cf88832e089265bdb15ffc35077310042cbbbeea",
+        "signature": "4576b4e61049f5ffd7c9e935cf88832e089265bdb15ffc35077310042cbbbeea",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@vue/shared/dist/shared.d.ts": {
+        "version": "5a4379f902f6ed97139be8e1522baebbb652ded6593a053f6e14969c7e1a8064",
+        "signature": "5a4379f902f6ed97139be8e1522baebbb652ded6593a053f6e14969c7e1a8064",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@babel/types/lib/index.d.ts": {
+        "version": "4606c6d854002b409744140a996a49c4a607c1eb0396855529836161892abef5",
+        "signature": "4606c6d854002b409744140a996a49c4a607c1eb0396855529836161892abef5",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@babel/parser/typings/babel-parser.d.ts": {
+        "version": "3e6297bcddf37e373d40ddb4c2b9e6fc98901b2a44c01b2d96af142874973c43",
+        "signature": "3e6297bcddf37e373d40ddb4c2b9e6fc98901b2a44c01b2d96af142874973c43",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@vue/compiler-core/node_modules/source-map/source-map.d.ts": {
+        "version": "2887592574fcdfd087647c539dcb0fbe5af2521270dad4a37f9d17c16190d579",
+        "signature": "2887592574fcdfd087647c539dcb0fbe5af2521270dad4a37f9d17c16190d579",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@vue/compiler-core/dist/compiler-core.d.ts": {
+        "version": "49d931cd8ab43414ed93b02aa50b6a9563f2efd38156f79c9a265b0605bfbb05",
+        "signature": "49d931cd8ab43414ed93b02aa50b6a9563f2efd38156f79c9a265b0605bfbb05",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@vue/compiler-dom/dist/compiler-dom.d.ts": {
+        "version": "ec615941bf9e09cdfdcf87234001e2ef7120407b44d887ef81a6043ee3f6ca1f",
+        "signature": "ec615941bf9e09cdfdcf87234001e2ef7120407b44d887ef81a6043ee3f6ca1f",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@vue/reactivity/dist/reactivity.d.ts": {
+        "version": "7e44b882a1be4154c6dc3fdf41f86302a1da02584977d9a4fa5b549c2769304b",
+        "signature": "7e44b882a1be4154c6dc3fdf41f86302a1da02584977d9a4fa5b549c2769304b",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@vue/runtime-core/dist/runtime-core.d.ts": {
+        "version": "9fb73a462a593f4629e2ce3fd092a417f50993009b87471ce6df54b7aca0e394",
+        "signature": "9fb73a462a593f4629e2ce3fd092a417f50993009b87471ce6df54b7aca0e394",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/csstype/index.d.ts": {
+        "version": "6868ca93b5c10a223aa7d0d8250ca301431ed31ecef2c3a1bc90f36cb9f01227",
+        "signature": "6868ca93b5c10a223aa7d0d8250ca301431ed31ecef2c3a1bc90f36cb9f01227",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@vue/runtime-dom/dist/runtime-dom.d.ts": {
+        "version": "fa578acc8b96fe4c1af5169a6b3b08f79ee80b4b5453aa1a80bf4058aacd54cf",
+        "signature": "fa578acc8b96fe4c1af5169a6b3b08f79ee80b4b5453aa1a80bf4058aacd54cf",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/vue/dist/vue.d.ts": {
+        "version": "db6ca7a40a1c61e910f5ff9b9f06f785601c4b352ecbf98b5c1823b9bde2a2f2",
+        "signature": "db6ca7a40a1c61e910f5ff9b9f06f785601c4b352ecbf98b5c1823b9bde2a2f2",
+        "affectsGlobalScope": false
+      },
+      "../src/components/helloworld.vue.ts": {
+        "version": "b4c05fba6e7262b95f5555235127ae381ba54720cdaab356f08f50f3da259b7b",
+        "signature": "81e397b9e580306adf5cacefa30b0820958e77994d7b5054c60df13282f1deb0",
+        "affectsGlobalScope": false
+      },
+      "../src/app.vue.ts": {
+        "version": "28f80840643f9d53f17f6007fa9f8464f729915299a096e6ed8b00f9707d40f4",
+        "signature": "082d06a16bdf5f5ce60d2f7a957a26283d095a679a9729f6baafb3730917edb3",
+        "affectsGlobalScope": false
+      },
+      "../src/main.ts": {
+        "version": "b5793576fe35ab72d7b3cdc56162bc825743ba64eba386ab5a71c5bd93b15168",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
+        "affectsGlobalScope": false
+      },
+      "../src/shims-vue.d.ts": {
+        "version": "34ad86c5e067c3c4f8d152ae81ea03d1cdb37d27cacb6b37a495cc0aa8c3fa05",
+        "signature": "34ad86c5e067c3c4f8d152ae81ea03d1cdb37d27cacb6b37a495cc0aa8c3fa05",
+        "affectsGlobalScope": false
+      },
+      "../src/practice/reactivity.ts": {
+        "version": "d499c4975a9f36faa5fd0cd02a30ade23328869f3e61c3f4715fb3909bc6a94d",
+        "signature": "f90239471e22e8ff7ca0efb56e98591702a7cc447391403f3436af08c0520f80",
+        "affectsGlobalScope": false
+      },
+      "../src/utils/once.ts": {
+        "version": "13f19169ce7ed5d6925b2ede14f730449981673e10b8dede2fdb0c307af40649",
+        "signature": "92af95e7cd4016235a95b02f9915735628f90e1b017dbf9e8ad041f892a751f0",
+        "affectsGlobalScope": false
+      },
+      "../tests/ref/ref.ts": {
+        "version": "ddccdc4638afea8767c4306ff72151d126ae3ba71e6f6f8d93946b31959b4c1a",
+        "signature": "f8feb626e2813e0d1aee27248a7c746bfb18b009d42c38417e59e686f3e20873",
+        "affectsGlobalScope": false
+      },
+      "../tests/unit/1reactivity_pure_js.spec.ts": {
+        "version": "4a3e103b24d1f1c280b65922cd0d9f3186566ce701fad7527a4badc8bac0ef18",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
+        "affectsGlobalScope": false
+      },
+      "../tests/unit/1reactivity_vue3.ts": {
+        "version": "e18fb38fd36556f2c726a92c14e3aa8170144e09f6fc65581c644bd512118c9e",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
+        "affectsGlobalScope": false
+      },
+      "../tests/unit/1reactivity_vue3_cus1-1.spec.ts": {
+        "version": "498dd05ddc7dffc174ae9e59878a97e020463fbf3512b5b406a1282fccd90ed5",
+        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "affectsGlobalScope": true
+      },
+      "../tests/unit/1reactivity_vue3_cus1-2.spec.ts": {
+        "version": "02c0a7f4508eb3c106c6cdcf766ffce61178ee617d63f26d730e0914c1d55e4f",
+        "signature": "1bf655f01c4c90f48cfbff318a4a490fa6013c1ed6b5868ff32addf764de1065",
+        "affectsGlobalScope": true
+      },
+      "../tests/unit/1reactivity_vue3_cus2.spec.ts": {
+        "version": "1d022cf2fae7f90a1810b237044e51e1b23b98f62da4e7330dc44539ffa50616",
+        "signature": "29ff55ccd123c57144344036742afbefa7f304a4c213f750d06f2ef828384830",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/@types/webpack-env/index.d.ts": {
+        "version": "5b3e6ce357a7a1a07c858432a3d2002750058725874db09a03a0a9e899d861f5",
+        "signature": "5b3e6ce357a7a1a07c858432a3d2002750058725874db09a03a0a9e899d861f5",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/@types/jest/node_modules/jest-diff/build/cleanupsemantic.d.ts": {
+        "version": "d8aab31ba8e618cc3eea10b0945de81cb93b7e8150a013a482332263b9305322",
+        "signature": "d8aab31ba8e618cc3eea10b0945de81cb93b7e8150a013a482332263b9305322",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/jest/node_modules/jest-diff/build/types.d.ts": {
+        "version": "69da61a7b5093dac77fa3bec8be95dcf9a74c95a0e9161edb98bb24e30e439d2",
+        "signature": "69da61a7b5093dac77fa3bec8be95dcf9a74c95a0e9161edb98bb24e30e439d2",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/jest/node_modules/jest-diff/build/difflines.d.ts": {
+        "version": "561eca7a381b96d6ccac6e4061e6d2ae53f5bc44203f3fd9f5b26864c32ae6e9",
+        "signature": "561eca7a381b96d6ccac6e4061e6d2ae53f5bc44203f3fd9f5b26864c32ae6e9",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/jest/node_modules/jest-diff/build/printdiffs.d.ts": {
+        "version": "62ea38627e3ebab429f7616812a9394d327c2bc271003dfba985de9b4137369f",
+        "signature": "62ea38627e3ebab429f7616812a9394d327c2bc271003dfba985de9b4137369f",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/jest/node_modules/jest-diff/build/index.d.ts": {
+        "version": "b4439890c168d646357928431100daac5cbdee1d345a34e6bf6eca9f3abe22bc",
+        "signature": "b4439890c168d646357928431100daac5cbdee1d345a34e6bf6eca9f3abe22bc",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/jest/node_modules/pretty-format/build/types.d.ts": {
+        "version": "5d72971a459517c44c1379dab9ed248e87a61ba0a1e0f25c9d67e1e640cd9a09",
+        "signature": "5d72971a459517c44c1379dab9ed248e87a61ba0a1e0f25c9d67e1e640cd9a09",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/jest/node_modules/pretty-format/build/index.d.ts": {
+        "version": "02d734976af36f4273d930bea88b3e62adf6b078cf120c1c63d49aa8d8427c5c",
+        "signature": "02d734976af36f4273d930bea88b3e62adf6b078cf120c1c63d49aa8d8427c5c",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/jest/index.d.ts": {
+        "version": "bbc19287f48d4b3c753bd2c82dd9326af19cccbfa1506f859029dfcedc7c5522",
+        "signature": "bbc19287f48d4b3c753bd2c82dd9326af19cccbfa1506f859029dfcedc7c5522",
+        "affectsGlobalScope": true
+      }
+    },
+    "options": {
+      "incremental": true,
+      "tsBuildInfoFile": "./.tsbuildinfo",
+      "target": 6,
+      "module": 99,
+      "strict": true,
+      "jsx": 1,
+      "importHelpers": true,
+      "moduleResolution": 2,
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "sourceMap": false,
+      "baseUrl": "..",
+      "types": [
+        "webpack-env",
+        "jest"
+      ],
+      "paths": {
+        "@/*": [
+          "src/*"
+        ]
+      },
+      "lib": [
+        "lib.esnext.d.ts",
+        "lib.dom.d.ts",
+        "lib.dom.iterable.d.ts",
+        "lib.scripthost.d.ts"
+      ],
+      "inlineSourceMap": false,
+      "declarationMap": false,
+      "pathsBasePath": "C:/Users/hermit/Documents/1work/titansoft/vue_reactivity",
+      "configFilePath": "../tsconfig.json"
+    },
+    "referencedMap": {
+      "../node_modules/@babel/parser/typings/babel-parser.d.ts": [
+        "../node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "../node_modules/@types/jest/index.d.ts": [
+        "../node_modules/@types/jest/node_modules/jest-diff/build/index.d.ts",
+        "../node_modules/@types/jest/node_modules/pretty-format/build/index.d.ts"
+      ],
+      "../node_modules/@types/jest/node_modules/jest-diff/build/difflines.d.ts": [
+        "../node_modules/@types/jest/node_modules/jest-diff/build/cleanupsemantic.d.ts",
+        "../node_modules/@types/jest/node_modules/jest-diff/build/types.d.ts"
+      ],
+      "../node_modules/@types/jest/node_modules/jest-diff/build/index.d.ts": [
+        "../node_modules/@types/jest/node_modules/jest-diff/build/cleanupsemantic.d.ts",
+        "../node_modules/@types/jest/node_modules/jest-diff/build/difflines.d.ts",
+        "../node_modules/@types/jest/node_modules/jest-diff/build/printdiffs.d.ts",
+        "../node_modules/@types/jest/node_modules/jest-diff/build/types.d.ts"
+      ],
+      "../node_modules/@types/jest/node_modules/jest-diff/build/printdiffs.d.ts": [
+        "../node_modules/@types/jest/node_modules/jest-diff/build/cleanupsemantic.d.ts",
+        "../node_modules/@types/jest/node_modules/jest-diff/build/types.d.ts"
+      ],
+      "../node_modules/@types/jest/node_modules/pretty-format/build/index.d.ts": [
+        "../node_modules/@types/jest/node_modules/pretty-format/build/types.d.ts"
+      ],
+      "../node_modules/@vue/compiler-core/dist/compiler-core.d.ts": [
+        "../node_modules/@babel/parser/typings/babel-parser.d.ts",
+        "../node_modules/@vue/compiler-core/node_modules/source-map/source-map.d.ts",
+        "../node_modules/@vue/shared/dist/shared.d.ts"
+      ],
+      "../node_modules/@vue/compiler-dom/dist/compiler-dom.d.ts": [
+        "../node_modules/@vue/compiler-core/dist/compiler-core.d.ts"
+      ],
+      "../node_modules/@vue/runtime-core/dist/runtime-core.d.ts": [
+        "../node_modules/@vue/reactivity/dist/reactivity.d.ts",
+        "../node_modules/@vue/runtime-dom/dist/runtime-dom.d.ts",
+        "../node_modules/@vue/shared/dist/shared.d.ts"
+      ],
+      "../node_modules/@vue/runtime-dom/dist/runtime-dom.d.ts": [
+        "../node_modules/@vue/reactivity/dist/reactivity.d.ts",
+        "../node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+        "../node_modules/csstype/index.d.ts"
+      ],
+      "../node_modules/vue/dist/vue.d.ts": [
+        "../node_modules/@vue/compiler-dom/dist/compiler-dom.d.ts",
+        "../node_modules/@vue/runtime-dom/dist/runtime-dom.d.ts"
+      ],
+      "../src/app.vue.ts": [
+        "../node_modules/tslib/tslib.d.ts",
+        "../node_modules/vue/dist/vue.d.ts",
+        "../src/components/helloworld.vue.ts"
+      ],
+      "../src/components/helloworld.vue.ts": [
+        "../node_modules/tslib/tslib.d.ts",
+        "../node_modules/vue/dist/vue.d.ts"
+      ],
+      "../src/main.ts": [
+        "../node_modules/tslib/tslib.d.ts",
+        "../node_modules/vue/dist/vue.d.ts",
+        "../src/app.vue.ts"
+      ],
+      "../src/practice/reactivity.ts": [
+        "../node_modules/tslib/tslib.d.ts"
+      ],
+      "../src/shims-vue.d.ts": [
+        "../node_modules/vue/dist/vue.d.ts"
+      ],
+      "../src/utils/once.ts": [
+        "../node_modules/tslib/tslib.d.ts",
+        "../node_modules/vue/dist/vue.d.ts"
+      ],
+      "../tests/ref/ref.ts": [
+        "../node_modules/tslib/tslib.d.ts"
+      ],
+      "../tests/unit/1reactivity_pure_js.spec.ts": [
+        "../node_modules/tslib/tslib.d.ts",
+        "../src/practice/reactivity.ts"
+      ],
+      "../tests/unit/1reactivity_vue3.ts": [
+        "../node_modules/tslib/tslib.d.ts",
+        "../node_modules/vue/dist/vue.d.ts",
+        "../src/utils/once.ts",
+        "../tests/ref/ref.ts"
+      ]
+    },
+    "exportedModulesMap": {
+      "../node_modules/@babel/parser/typings/babel-parser.d.ts": [
+        "../node_modules/@babel/types/lib/index.d.ts"
+      ],
+      "../node_modules/@types/jest/index.d.ts": [
+        "../node_modules/@types/jest/node_modules/jest-diff/build/index.d.ts",
+        "../node_modules/@types/jest/node_modules/pretty-format/build/index.d.ts"
+      ],
+      "../node_modules/@types/jest/node_modules/jest-diff/build/difflines.d.ts": [
+        "../node_modules/@types/jest/node_modules/jest-diff/build/cleanupsemantic.d.ts",
+        "../node_modules/@types/jest/node_modules/jest-diff/build/types.d.ts"
+      ],
+      "../node_modules/@types/jest/node_modules/jest-diff/build/index.d.ts": [
+        "../node_modules/@types/jest/node_modules/jest-diff/build/cleanupsemantic.d.ts",
+        "../node_modules/@types/jest/node_modules/jest-diff/build/difflines.d.ts",
+        "../node_modules/@types/jest/node_modules/jest-diff/build/printdiffs.d.ts",
+        "../node_modules/@types/jest/node_modules/jest-diff/build/types.d.ts"
+      ],
+      "../node_modules/@types/jest/node_modules/jest-diff/build/printdiffs.d.ts": [
+        "../node_modules/@types/jest/node_modules/jest-diff/build/cleanupsemantic.d.ts",
+        "../node_modules/@types/jest/node_modules/jest-diff/build/types.d.ts"
+      ],
+      "../node_modules/@types/jest/node_modules/pretty-format/build/index.d.ts": [
+        "../node_modules/@types/jest/node_modules/pretty-format/build/types.d.ts"
+      ],
+      "../node_modules/@vue/compiler-core/dist/compiler-core.d.ts": [
+        "../node_modules/@babel/parser/typings/babel-parser.d.ts",
+        "../node_modules/@vue/compiler-core/node_modules/source-map/source-map.d.ts",
+        "../node_modules/@vue/shared/dist/shared.d.ts"
+      ],
+      "../node_modules/@vue/compiler-dom/dist/compiler-dom.d.ts": [
+        "../node_modules/@vue/compiler-core/dist/compiler-core.d.ts"
+      ],
+      "../node_modules/@vue/runtime-core/dist/runtime-core.d.ts": [
+        "../node_modules/@vue/reactivity/dist/reactivity.d.ts",
+        "../node_modules/@vue/runtime-dom/dist/runtime-dom.d.ts",
+        "../node_modules/@vue/shared/dist/shared.d.ts"
+      ],
+      "../node_modules/@vue/runtime-dom/dist/runtime-dom.d.ts": [
+        "../node_modules/@vue/reactivity/dist/reactivity.d.ts",
+        "../node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+        "../node_modules/csstype/index.d.ts"
+      ],
+      "../node_modules/vue/dist/vue.d.ts": [
+        "../node_modules/@vue/compiler-dom/dist/compiler-dom.d.ts",
+        "../node_modules/@vue/runtime-dom/dist/runtime-dom.d.ts"
+      ],
+      "../src/app.vue.ts": [
+        "../node_modules/vue/dist/vue.d.ts"
+      ],
+      "../src/components/helloworld.vue.ts": [
+        "../node_modules/vue/dist/vue.d.ts"
+      ],
+      "../src/shims-vue.d.ts": [
+        "../node_modules/vue/dist/vue.d.ts"
+      ],
+      "../src/utils/once.ts": [
+        "../node_modules/vue/dist/vue.d.ts"
+      ]
+    },
+    "semanticDiagnosticsPerFile": [
+      "../node_modules/@babel/parser/typings/babel-parser.d.ts",
+      "../node_modules/@babel/types/lib/index.d.ts",
+      "../node_modules/@types/jest/index.d.ts",
+      "../node_modules/@types/jest/node_modules/jest-diff/build/cleanupsemantic.d.ts",
+      "../node_modules/@types/jest/node_modules/jest-diff/build/difflines.d.ts",
+      "../node_modules/@types/jest/node_modules/jest-diff/build/index.d.ts",
+      "../node_modules/@types/jest/node_modules/jest-diff/build/printdiffs.d.ts",
+      "../node_modules/@types/jest/node_modules/jest-diff/build/types.d.ts",
+      "../node_modules/@types/jest/node_modules/pretty-format/build/index.d.ts",
+      "../node_modules/@types/jest/node_modules/pretty-format/build/types.d.ts",
+      "../node_modules/@types/webpack-env/index.d.ts",
+      "../node_modules/@vue/compiler-core/dist/compiler-core.d.ts",
+      "../node_modules/@vue/compiler-core/node_modules/source-map/source-map.d.ts",
+      "../node_modules/@vue/compiler-dom/dist/compiler-dom.d.ts",
+      "../node_modules/@vue/reactivity/dist/reactivity.d.ts",
+      "../node_modules/@vue/runtime-core/dist/runtime-core.d.ts",
+      "../node_modules/@vue/runtime-dom/dist/runtime-dom.d.ts",
+      "../node_modules/@vue/shared/dist/shared.d.ts",
+      "../node_modules/csstype/index.d.ts",
+      "../node_modules/tslib/tslib.d.ts",
+      "../node_modules/typescript/lib/lib.dom.d.ts",
+      "../node_modules/typescript/lib/lib.dom.iterable.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.collection.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.core.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.generator.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.iterable.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.promise.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.proxy.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.reflect.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.symbol.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+      "../node_modules/typescript/lib/lib.es2016.array.include.d.ts",
+      "../node_modules/typescript/lib/lib.es2016.d.ts",
+      "../node_modules/typescript/lib/lib.es2017.d.ts",
+      "../node_modules/typescript/lib/lib.es2017.intl.d.ts",
+      "../node_modules/typescript/lib/lib.es2017.object.d.ts",
+      "../node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts",
+      "../node_modules/typescript/lib/lib.es2017.string.d.ts",
+      "../node_modules/typescript/lib/lib.es2017.typedarrays.d.ts",
+      "../node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts",
+      "../node_modules/typescript/lib/lib.es2018.asynciterable.d.ts",
+      "../node_modules/typescript/lib/lib.es2018.d.ts",
+      "../node_modules/typescript/lib/lib.es2018.intl.d.ts",
+      "../node_modules/typescript/lib/lib.es2018.promise.d.ts",
+      "../node_modules/typescript/lib/lib.es2018.regexp.d.ts",
+      "../node_modules/typescript/lib/lib.es2019.array.d.ts",
+      "../node_modules/typescript/lib/lib.es2019.d.ts",
+      "../node_modules/typescript/lib/lib.es2019.object.d.ts",
+      "../node_modules/typescript/lib/lib.es2019.string.d.ts",
+      "../node_modules/typescript/lib/lib.es2019.symbol.d.ts",
+      "../node_modules/typescript/lib/lib.es2020.bigint.d.ts",
+      "../node_modules/typescript/lib/lib.es2020.d.ts",
+      "../node_modules/typescript/lib/lib.es2020.intl.d.ts",
+      "../node_modules/typescript/lib/lib.es2020.promise.d.ts",
+      "../node_modules/typescript/lib/lib.es2020.sharedmemory.d.ts",
+      "../node_modules/typescript/lib/lib.es2020.string.d.ts",
+      "../node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts",
+      "../node_modules/typescript/lib/lib.es5.d.ts",
+      "../node_modules/typescript/lib/lib.esnext.d.ts",
+      "../node_modules/typescript/lib/lib.esnext.intl.d.ts",
+      "../node_modules/typescript/lib/lib.esnext.promise.d.ts",
+      "../node_modules/typescript/lib/lib.esnext.string.d.ts",
+      "../node_modules/typescript/lib/lib.esnext.weakref.d.ts",
+      "../node_modules/typescript/lib/lib.scripthost.d.ts",
+      "../node_modules/vue/dist/vue.d.ts",
+      "../src/app.vue.ts",
+      "../src/components/helloworld.vue.ts",
+      "../src/main.ts",
+      "../src/practice/reactivity.ts",
+      "../src/shims-vue.d.ts",
+      "../src/utils/once.ts",
+      "../tests/ref/ref.ts",
+      "../tests/unit/1reactivity_pure_js.spec.ts",
+      "../tests/unit/1reactivity_vue3.ts",
+      "../tests/unit/1reactivity_vue3_cus1-1.spec.ts",
+      [
+        "../tests/unit/1reactivity_vue3_cus1-2.spec.ts",
+        [
+          {
+            "file": "../tests/unit/1reactivity_vue3_cus1-2.spec.ts",
+            "start": 34,
+            "length": 3,
+            "messageText": "Cannot redeclare block-scoped variable 'dep'.",
+            "category": 1,
+            "code": 2451,
+            "relatedInformation": [
+              {
+                "file": "../tests/unit/1reactivity_vue3_cus2.spec.ts",
+                "start": 79,
+                "length": 3,
+                "messageText": "'dep' was also declared here.",
+                "category": 3,
+                "code": 6203
+              }
+            ]
+          },
+          {
+            "file": "../tests/unit/1reactivity_vue3_cus1-2.spec.ts",
+            "start": 65,
+            "length": 12,
+            "messageText": "Cannot redeclare block-scoped variable 'activeEffect'.",
+            "category": 1,
+            "code": 2451,
+            "relatedInformation": [
+              {
+                "file": "../tests/unit/1reactivity_vue3_cus2.spec.ts",
+                "start": 110,
+                "length": 12,
+                "messageText": "'activeEffect' was also declared here.",
+                "category": 3,
+                "code": 6203
+              }
+            ]
+          },
+          {
+            "file": "../tests/unit/1reactivity_vue3_cus1-2.spec.ts",
+            "start": 109,
+            "length": 6,
+            "messageText": "Cannot redeclare block-scoped variable 'effect'.",
+            "category": 1,
+            "code": 2451,
+            "relatedInformation": [
+              {
+                "file": "../tests/unit/1reactivity_vue3_cus2.spec.ts",
+                "start": 186,
+                "length": 6,
+                "messageText": "'effect' was also declared here.",
+                "category": 3,
+                "code": 6203
+              }
+            ]
+          },
+          {
+            "file": "../tests/unit/1reactivity_vue3_cus1-2.spec.ts",
+            "start": 192,
+            "length": 5,
+            "messageText": "Duplicate function implementation.",
+            "category": 1,
+            "code": 2393
+          },
+          {
+            "file": "../tests/unit/1reactivity_vue3_cus1-2.spec.ts",
+            "start": 234,
+            "length": 7,
+            "messageText": "Duplicate function implementation.",
+            "category": 1,
+            "code": 2393
+          }
+        ]
+      ],
+      [
+        "../tests/unit/1reactivity_vue3_cus2.spec.ts",
+        [
+          {
+            "file": "../tests/unit/1reactivity_vue3_cus2.spec.ts",
+            "start": 79,
+            "length": 3,
+            "messageText": "Cannot redeclare block-scoped variable 'dep'.",
+            "category": 1,
+            "code": 2451,
+            "relatedInformation": [
+              {
+                "file": "../tests/unit/1reactivity_vue3_cus1-2.spec.ts",
+                "start": 34,
+                "length": 3,
+                "messageText": "'dep' was also declared here.",
+                "category": 3,
+                "code": 6203
+              }
+            ]
+          },
+          {
+            "file": "../tests/unit/1reactivity_vue3_cus2.spec.ts",
+            "start": 110,
+            "length": 12,
+            "messageText": "Cannot redeclare block-scoped variable 'activeEffect'.",
+            "category": 1,
+            "code": 2451,
+            "relatedInformation": [
+              {
+                "file": "../tests/unit/1reactivity_vue3_cus1-2.spec.ts",
+                "start": 65,
+                "length": 12,
+                "messageText": "'activeEffect' was also declared here.",
+                "category": 3,
+                "code": 6203
+              }
+            ]
+          },
+          {
+            "file": "../tests/unit/1reactivity_vue3_cus2.spec.ts",
+            "start": 186,
+            "length": 6,
+            "messageText": "Cannot redeclare block-scoped variable 'effect'.",
+            "category": 1,
+            "code": 2451,
+            "relatedInformation": [
+              {
+                "file": "../tests/unit/1reactivity_vue3_cus1-2.spec.ts",
+                "start": 109,
+                "length": 6,
+                "messageText": "'effect' was also declared here.",
+                "category": 3,
+                "code": 6203
+              }
+            ]
+          },
+          {
+            "file": "../tests/unit/1reactivity_vue3_cus2.spec.ts",
+            "start": 277,
+            "length": 5,
+            "messageText": "Duplicate function implementation.",
+            "category": 1,
+            "code": 2393
+          },
+          {
+            "file": "../tests/unit/1reactivity_vue3_cus2.spec.ts",
+            "start": 906,
+            "length": 7,
+            "messageText": "Duplicate function implementation.",
+            "category": 1,
+            "code": 2393
+          }
+        ]
+      ]
+    ]
+  },
+  "version": "4.1.5"
+}

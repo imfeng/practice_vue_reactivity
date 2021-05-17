@@ -1,99 +1,43 @@
 <template>
     <div class="hello">
-        <h1>{{ msg }}</h1>
-        <p>
-            For a guide and recipes on how to configure / customize this project,<br>
-            check out the
-            <a
-                href="https://cli.vuejs.org"
-                target="_blank"
-                rel="noopener"
-            >vue-cli documentation</a>.
-        </p>
-        <h3>Installed CLI Plugins</h3>
-        <ul>
-            <li><a
-                href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel"
-                target="_blank"
-                rel="noopener"
-            >babel</a></li>
-            <li><a
-                href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-typescript"
-                target="_blank"
-                rel="noopener"
-            >typescript</a></li>
-            <li><a
-                href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint"
-                target="_blank"
-                rel="noopener"
-            >eslint</a></li>
-            <li><a
-                href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-unit-jest"
-                target="_blank"
-                rel="noopener"
-            >unit-jest</a></li>
-        </ul>
-        <h3>Essential Links</h3>
-        <ul>
-            <li><a
-                href="https://vuejs.org"
-                target="_blank"
-                rel="noopener"
-            >Core Docs</a></li>
-            <li><a
-                href="https://forum.vuejs.org"
-                target="_blank"
-                rel="noopener"
-            >Forum</a></li>
-            <li><a
-                href="https://chat.vuejs.org"
-                target="_blank"
-                rel="noopener"
-            >Community Chat</a></li>
-            <li><a
-                href="https://twitter.com/vuejs"
-                target="_blank"
-                rel="noopener"
-            >Twitter</a></li>
-            <li><a
-                href="https://news.vuejs.org"
-                target="_blank"
-                rel="noopener"
-            >News</a></li>
-        </ul>
-        <h3>Ecosystem</h3>
-        <ul>
-            <li><a
-                href="https://router.vuejs.org"
-                target="_blank"
-                rel="noopener"
-            >vue-router</a></li>
-            <li><a
-                href="https://vuex.vuejs.org"
-                target="_blank"
-                rel="noopener"
-            >vuex</a></li>
-            <li><a
-                href="https://github.com/vuejs/vue-devtools#vue-devtools"
-                target="_blank"
-                rel="noopener"
-            >vue-devtools</a></li>
-            <li><a
-                href="https://vue-loader.vuejs.org"
-                target="_blank"
-                rel="noopener"
-            >vue-loader</a></li>
-            <li><a
-                href="https://github.com/vuejs/awesome-vue"
-                target="_blank"
-                rel="noopener"
-            >awesome-vue</a></li>
-        </ul>
+        <!-- <h1>{{ msg }}</h1> -->
+        <h1>Selected ID: {{ selectedId }}</h1>
+        <br>
+        <pre>
+            {{ userDetail }}
+        </pre>
+        <hr>
+        <div
+            class="item"
+            v-for="(item, idx) in userList"
+            v-bind:key="idx"
+            v-on:click="setId(item.id)"
+        >
+            <button>id = {{ item.id }}</button>
+        </div>
     </div>
 </template>
 
 <script lang="ts">
-import { computed, defineComponent } from 'vue';
+import { computed, defineComponent, reactive, ref, watch, watchEffect } from 'vue';
+
+type UserDetail = {
+    id: number | null,
+    level: number | null,
+}
+function delayData(data: UserDetail, time = 1000): {
+    promise: Promise<UserDetail>,
+    timeoutId: number
+} {
+  let timeoutId = 0;
+  const p = new Promise((resolve) => {
+    timeoutId = setTimeout(() => resolve(data), (data.id ?? 1) * time);
+  });
+  return {
+    promise: p as Promise<UserDetail>,
+    timeoutId
+  };
+}
 
 export default defineComponent({
   name: 'HelloWorld',
@@ -102,12 +46,75 @@ export default defineComponent({
       type: String,
       default: () => ''
     }
-
   },
-  setup () {
-    const foo = computed(() => 123);
+  setup() {
+    const selectedId = ref(-1);
+    const userDetail = ref<UserDetail>({
+      id: null,
+      level: null
+    });
+
+    const userList = ref(new Array(10).fill(0).map((_, i) => ({ id: i, level: i })));
+    const setId = (id: number) => {
+      selectedId.value = id;
+    };
+
+    const tmp1 = ref(123);
+    const tmp2 = ref(2);
+
+    watchEffect(async(onInvalidate) => {
+      const now = selectedId.value;
+      console.log(`changed: ${now}`);
+      const { promise, timeoutId } = delayData({
+        id: now,
+        level: now * tmp1.value * tmp2.value
+      });
+      onInvalidate(() => {
+        console.log('onInvalidate! ', now);
+        clearTimeout(timeoutId);
+      });
+      const result = await promise;
+      console.log(`result: ${now}`);
+      console.log(result.id);
+      userDetail.value = result;
+    }, {
+      onTrack(e) {
+        debugger;
+      },
+      onTrigger(e) {
+        debugger;
+      }
+    });
+
+    // watch(selectedId, async(newId, oldId, onInvalidate) => {
+    //   // const now = selectedId.value;
+    //   console.log(`changed: ${newId}`);
+    //   const { promise, timeoutId } = delayData({
+    //     id: newId,
+    //     level: newId
+    //   });
+    //   onInvalidate(() => {
+    //     console.log('onInvalidate! ', newId);
+    //     clearTimeout(timeoutId);
+    //   });
+    //   const result = await promise;
+    //   console.log(`result: ${newId}`);
+    //   console.log(result.id);
+    //   userDetail.value = result;
+    // }, {
+    //   onTrack(e) {
+    //     debugger;
+    //   },
+    //   onTrigger(e) {
+    //     debugger;
+    //   }
+    // });
+
     return {
-      foo
+      setId,
+      userList,
+      selectedId,
+      userDetail
     };
   }
 });
