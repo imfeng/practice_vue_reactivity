@@ -287,17 +287,37 @@
         "affectsGlobalScope": false
       },
       "../src/components/helloworld.vue.ts": {
-        "version": "b4c05fba6e7262b95f5555235127ae381ba54720cdaab356f08f50f3da259b7b",
+        "version": "a84b4060f63c7b738e5f7093eeb2b483dbf1d6d81a27dba18dafd7dc4b86a8b3",
         "signature": "81e397b9e580306adf5cacefa30b0820958e77994d7b5054c60df13282f1deb0",
         "affectsGlobalScope": false
       },
+      "../src/store/store.ts": {
+        "version": "ff334590bbf7aaf13c7d7dced59c49b9cbccf6b78ed147c43703fe461fd30e82",
+        "signature": "8b17e3053606e6f9bedc63ada1db67576592d44930b6d39b83e2739f2dc9e9c5",
+        "affectsGlobalScope": false
+      },
+      "../src/store/globalstore.ts": {
+        "version": "0db046110fc8f7ad3f70fc2de26f0c1e6fff76a9ad150d27a32b2812f56ac87f",
+        "signature": "76cd73196e8cc4e37769a9487379d6bca7b032bf6b3c4abb3f680d8b752cd3ed",
+        "affectsGlobalScope": false
+      },
+      "../src/components/storeexample/storeexample.vue.ts": {
+        "version": "84c5a64a074d0ac136a446fd952bbba82d9a818ebbfdd12517b49a37cca61910",
+        "signature": "b5a3a9c8b1e22202174b6becf8fb2aec2917d3ad11327855577702b8f2b2cd71",
+        "affectsGlobalScope": false
+      },
+      "../src/components/storeexample/storeexamplesub.vue.ts": {
+        "version": "58b146edc3e850a230754db13fdf4b14e861f6a5589be8d9cc6b36ca71a3bbf2",
+        "signature": "750ce7f9a6ba69137e8bec00ce4841cb04c8a581fe61a870966b380406f580bf",
+        "affectsGlobalScope": false
+      },
       "../src/app.vue.ts": {
-        "version": "28f80840643f9d53f17f6007fa9f8464f729915299a096e6ed8b00f9707d40f4",
-        "signature": "082d06a16bdf5f5ce60d2f7a957a26283d095a679a9729f6baafb3730917edb3",
+        "version": "1e440189c5735ba17638260ecc2479fcb391f2b2ec8d016ff9dca80cb350f951",
+        "signature": "57e2ca9bf807d8674bd7e8248e87e116380e69bc41d5136e93e3aee9d34929b2",
         "affectsGlobalScope": false
       },
       "../src/main.ts": {
-        "version": "b5793576fe35ab72d7b3cdc56162bc825743ba64eba386ab5a71c5bd93b15168",
+        "version": "5f0d16c53bcd9281c8191a932806bfa040d2f386e0c345d4d12fd7c7eb3d148d",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
         "affectsGlobalScope": false
       },
@@ -306,7 +326,22 @@
         "signature": "34ad86c5e067c3c4f8d152ae81ea03d1cdb37d27cacb6b37a495cc0aa8c3fa05",
         "affectsGlobalScope": false
       },
-      "../src/practice/reactivity.ts": {
+      "../src/components/storeexample/tempcontextstore.ts": {
+        "version": "1737e07c2addb615e61d73648450ac6aafc0becfceb87c5e422d2a9d7a132f42",
+        "signature": "e6b422f0405170a5e78999c83138c3141419df343394be8d0623e380630c207b",
+        "affectsGlobalScope": false
+      },
+      "../src/practice/reactivity_chap1.ts": {
+        "version": "50dee6248215aa28d5fcfe1b745fe07d791cc94b05bc9a345bf253a13859de3c",
+        "signature": "0a32345f4fa63d92d2338300e932096c6e205821137079136d1693ab1909f74a",
+        "affectsGlobalScope": false
+      },
+      "../src/practice/reactivity_chap2.ts": {
+        "version": "3de6738b886f60fed475eac046dcb0bf7a87e570e71fb5378aa93a48dae9502a",
+        "signature": "d6b65834d50d95ec68a0e63c29c6c5ef7a054a655e77b2b03f0b745572a00734",
+        "affectsGlobalScope": false
+      },
+      "../src/practice/reactivity_vanilla.ts": {
         "version": "d499c4975a9f36faa5fd0cd02a30ade23328869f3e61c3f4715fb3909bc6a94d",
         "signature": "f90239471e22e8ff7ca0efb56e98591702a7cc447391403f3436af08c0520f80",
         "affectsGlobalScope": false
@@ -316,35 +351,20 @@
         "signature": "92af95e7cd4016235a95b02f9915735628f90e1b017dbf9e8ad041f892a751f0",
         "affectsGlobalScope": false
       },
-      "../tests/ref/ref.ts": {
-        "version": "ddccdc4638afea8767c4306ff72151d126ae3ba71e6f6f8d93946b31959b4c1a",
-        "signature": "f8feb626e2813e0d1aee27248a7c746bfb18b009d42c38417e59e686f3e20873",
+      "../tests/unit/reactivity_chap1.spec.ts": {
+        "version": "08e365951bf320d220390ced16d1e84daff4193bbaad770d654449cf5bbe66ce",
+        "signature": "6e71d043a0d6cfed1909eb7dc3a19e03a90715e8120f94cd4c4195486b3ef884",
         "affectsGlobalScope": false
       },
-      "../tests/unit/1reactivity_pure_js.spec.ts": {
-        "version": "4a3e103b24d1f1c280b65922cd0d9f3186566ce701fad7527a4badc8bac0ef18",
+      "../tests/unit/reactivity_chap2.spec.ts": {
+        "version": "e41f565f861af86bb10af2511a875163b20bf95d52f4d65e6ca20edadbc1cb76",
+        "signature": "6e71d043a0d6cfed1909eb7dc3a19e03a90715e8120f94cd4c4195486b3ef884",
+        "affectsGlobalScope": false
+      },
+      "../tests/unit/reactivity_vanilla.spec.ts": {
+        "version": "cb66bed74591d274e1f578da25c65c0d115c1e487c282e766a33176a7c20f5c2",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
         "affectsGlobalScope": false
-      },
-      "../tests/unit/1reactivity_vue3.ts": {
-        "version": "e18fb38fd36556f2c726a92c14e3aa8170144e09f6fc65581c644bd512118c9e",
-        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
-        "affectsGlobalScope": false
-      },
-      "../tests/unit/1reactivity_vue3_cus1-1.spec.ts": {
-        "version": "498dd05ddc7dffc174ae9e59878a97e020463fbf3512b5b406a1282fccd90ed5",
-        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "affectsGlobalScope": true
-      },
-      "../tests/unit/1reactivity_vue3_cus1-2.spec.ts": {
-        "version": "02c0a7f4508eb3c106c6cdcf766ffce61178ee617d63f26d730e0914c1d55e4f",
-        "signature": "1bf655f01c4c90f48cfbff318a4a490fa6013c1ed6b5868ff32addf764de1065",
-        "affectsGlobalScope": true
-      },
-      "../tests/unit/1reactivity_vue3_cus2.spec.ts": {
-        "version": "1d022cf2fae7f90a1810b237044e51e1b23b98f62da4e7330dc44539ffa50616",
-        "signature": "29ff55ccd123c57144344036742afbefa7f304a4c213f750d06f2ef828384830",
-        "affectsGlobalScope": true
       },
       "../node_modules/@types/webpack-env/index.d.ts": {
         "version": "5b3e6ce357a7a1a07c858432a3d2002750058725874db09a03a0a9e899d861f5",
@@ -423,7 +443,7 @@
       ],
       "inlineSourceMap": false,
       "declarationMap": false,
-      "pathsBasePath": "C:/Users/hermit/Documents/1work/titansoft/vue_reactivity",
+      "pathsBasePath": "C:/Users/hermit/Documents/1work/titansoft/sharing/vue_store",
       "configFilePath": "../tsconfig.json"
     },
     "referencedMap": {
@@ -476,39 +496,70 @@
       "../src/app.vue.ts": [
         "../node_modules/tslib/tslib.d.ts",
         "../node_modules/vue/dist/vue.d.ts",
-        "../src/components/helloworld.vue.ts"
+        "../src/components/helloworld.vue.ts",
+        "../src/components/storeexample/storeexample.vue.ts",
+        "../src/components/storeexample/storeexamplesub.vue.ts",
+        "../src/shims-vue.d.ts"
       ],
       "../src/components/helloworld.vue.ts": [
         "../node_modules/tslib/tslib.d.ts",
         "../node_modules/vue/dist/vue.d.ts"
+      ],
+      "../src/components/storeexample/storeexample.vue.ts": [
+        "../node_modules/tslib/tslib.d.ts",
+        "../node_modules/vue/dist/vue.d.ts",
+        "../src/store/globalstore.ts"
+      ],
+      "../src/components/storeexample/storeexamplesub.vue.ts": [
+        "../node_modules/tslib/tslib.d.ts",
+        "../node_modules/vue/dist/vue.d.ts",
+        "../src/store/globalstore.ts"
+      ],
+      "../src/components/storeexample/tempcontextstore.ts": [
+        "../node_modules/tslib/tslib.d.ts",
+        "../src/store/store.ts"
       ],
       "../src/main.ts": [
         "../node_modules/tslib/tslib.d.ts",
         "../node_modules/vue/dist/vue.d.ts",
         "../src/app.vue.ts"
       ],
-      "../src/practice/reactivity.ts": [
+      "../src/practice/reactivity_chap1.ts": [
+        "../node_modules/tslib/tslib.d.ts"
+      ],
+      "../src/practice/reactivity_chap2.ts": [
+        "../node_modules/tslib/tslib.d.ts"
+      ],
+      "../src/practice/reactivity_vanilla.ts": [
         "../node_modules/tslib/tslib.d.ts"
       ],
       "../src/shims-vue.d.ts": [
+        "../node_modules/vue/dist/vue.d.ts"
+      ],
+      "../src/store/globalstore.ts": [
+        "../node_modules/tslib/tslib.d.ts",
+        "../node_modules/vue/dist/vue.d.ts",
+        "../src/store/store.ts"
+      ],
+      "../src/store/store.ts": [
+        "../node_modules/tslib/tslib.d.ts",
         "../node_modules/vue/dist/vue.d.ts"
       ],
       "../src/utils/once.ts": [
         "../node_modules/tslib/tslib.d.ts",
         "../node_modules/vue/dist/vue.d.ts"
       ],
-      "../tests/ref/ref.ts": [
-        "../node_modules/tslib/tslib.d.ts"
-      ],
-      "../tests/unit/1reactivity_pure_js.spec.ts": [
+      "../tests/unit/reactivity_chap1.spec.ts": [
         "../node_modules/tslib/tslib.d.ts",
-        "../src/practice/reactivity.ts"
+        "../src/practice/reactivity_chap1.ts"
       ],
-      "../tests/unit/1reactivity_vue3.ts": [
+      "../tests/unit/reactivity_chap2.spec.ts": [
         "../node_modules/tslib/tslib.d.ts",
-        "../node_modules/vue/dist/vue.d.ts",
-        "../src/utils/once.ts",
-        "../tests/ref/ref.ts"
+        "../src/practice/reactivity_chap2.ts"
+      ],
+      "../tests/unit/reactivity_vanilla.spec.ts": [
+        "../node_modules/tslib/tslib.d.ts",
+        "../src/practice/reactivity_vanilla.ts"
       ]
     },
     "exportedModulesMap": {
@@ -564,7 +615,16 @@
       "../src/components/helloworld.vue.ts": [
         "../node_modules/vue/dist/vue.d.ts"
       ],
+      "../src/components/storeexample/storeexample.vue.ts": [
+        "../node_modules/vue/dist/vue.d.ts"
+      ],
+      "../src/components/storeexample/storeexamplesub.vue.ts": [
+        "../node_modules/vue/dist/vue.d.ts"
+      ],
       "../src/shims-vue.d.ts": [
+        "../node_modules/vue/dist/vue.d.ts"
+      ],
+      "../src/store/globalstore.ts": [
         "../node_modules/vue/dist/vue.d.ts"
       ],
       "../src/utils/once.ts": [
@@ -640,164 +700,20 @@
       "../node_modules/vue/dist/vue.d.ts",
       "../src/app.vue.ts",
       "../src/components/helloworld.vue.ts",
+      "../src/components/storeexample/storeexample.vue.ts",
+      "../src/components/storeexample/storeexamplesub.vue.ts",
+      "../src/components/storeexample/tempcontextstore.ts",
       "../src/main.ts",
-      "../src/practice/reactivity.ts",
+      "../src/practice/reactivity_chap1.ts",
+      "../src/practice/reactivity_chap2.ts",
+      "../src/practice/reactivity_vanilla.ts",
       "../src/shims-vue.d.ts",
+      "../src/store/globalstore.ts",
+      "../src/store/store.ts",
       "../src/utils/once.ts",
-      "../tests/ref/ref.ts",
-      "../tests/unit/1reactivity_pure_js.spec.ts",
-      "../tests/unit/1reactivity_vue3.ts",
-      "../tests/unit/1reactivity_vue3_cus1-1.spec.ts",
-      [
-        "../tests/unit/1reactivity_vue3_cus1-2.spec.ts",
-        [
-          {
-            "file": "../tests/unit/1reactivity_vue3_cus1-2.spec.ts",
-            "start": 34,
-            "length": 3,
-            "messageText": "Cannot redeclare block-scoped variable 'dep'.",
-            "category": 1,
-            "code": 2451,
-            "relatedInformation": [
-              {
-                "file": "../tests/unit/1reactivity_vue3_cus2.spec.ts",
-                "start": 79,
-                "length": 3,
-                "messageText": "'dep' was also declared here.",
-                "category": 3,
-                "code": 6203
-              }
-            ]
-          },
-          {
-            "file": "../tests/unit/1reactivity_vue3_cus1-2.spec.ts",
-            "start": 65,
-            "length": 12,
-            "messageText": "Cannot redeclare block-scoped variable 'activeEffect'.",
-            "category": 1,
-            "code": 2451,
-            "relatedInformation": [
-              {
-                "file": "../tests/unit/1reactivity_vue3_cus2.spec.ts",
-                "start": 110,
-                "length": 12,
-                "messageText": "'activeEffect' was also declared here.",
-                "category": 3,
-                "code": 6203
-              }
-            ]
-          },
-          {
-            "file": "../tests/unit/1reactivity_vue3_cus1-2.spec.ts",
-            "start": 109,
-            "length": 6,
-            "messageText": "Cannot redeclare block-scoped variable 'effect'.",
-            "category": 1,
-            "code": 2451,
-            "relatedInformation": [
-              {
-                "file": "../tests/unit/1reactivity_vue3_cus2.spec.ts",
-                "start": 186,
-                "length": 6,
-                "messageText": "'effect' was also declared here.",
-                "category": 3,
-                "code": 6203
-              }
-            ]
-          },
-          {
-            "file": "../tests/unit/1reactivity_vue3_cus1-2.spec.ts",
-            "start": 192,
-            "length": 5,
-            "messageText": "Duplicate function implementation.",
-            "category": 1,
-            "code": 2393
-          },
-          {
-            "file": "../tests/unit/1reactivity_vue3_cus1-2.spec.ts",
-            "start": 234,
-            "length": 7,
-            "messageText": "Duplicate function implementation.",
-            "category": 1,
-            "code": 2393
-          }
-        ]
-      ],
-      [
-        "../tests/unit/1reactivity_vue3_cus2.spec.ts",
-        [
-          {
-            "file": "../tests/unit/1reactivity_vue3_cus2.spec.ts",
-            "start": 79,
-            "length": 3,
-            "messageText": "Cannot redeclare block-scoped variable 'dep'.",
-            "category": 1,
-            "code": 2451,
-            "relatedInformation": [
-              {
-                "file": "../tests/unit/1reactivity_vue3_cus1-2.spec.ts",
-                "start": 34,
-                "length": 3,
-                "messageText": "'dep' was also declared here.",
-                "category": 3,
-                "code": 6203
-              }
-            ]
-          },
-          {
-            "file": "../tests/unit/1reactivity_vue3_cus2.spec.ts",
-            "start": 110,
-            "length": 12,
-            "messageText": "Cannot redeclare block-scoped variable 'activeEffect'.",
-            "category": 1,
-            "code": 2451,
-            "relatedInformation": [
-              {
-                "file": "../tests/unit/1reactivity_vue3_cus1-2.spec.ts",
-                "start": 65,
-                "length": 12,
-                "messageText": "'activeEffect' was also declared here.",
-                "category": 3,
-                "code": 6203
-              }
-            ]
-          },
-          {
-            "file": "../tests/unit/1reactivity_vue3_cus2.spec.ts",
-            "start": 186,
-            "length": 6,
-            "messageText": "Cannot redeclare block-scoped variable 'effect'.",
-            "category": 1,
-            "code": 2451,
-            "relatedInformation": [
-              {
-                "file": "../tests/unit/1reactivity_vue3_cus1-2.spec.ts",
-                "start": 109,
-                "length": 6,
-                "messageText": "'effect' was also declared here.",
-                "category": 3,
-                "code": 6203
-              }
-            ]
-          },
-          {
-            "file": "../tests/unit/1reactivity_vue3_cus2.spec.ts",
-            "start": 277,
-            "length": 5,
-            "messageText": "Duplicate function implementation.",
-            "category": 1,
-            "code": 2393
-          },
-          {
-            "file": "../tests/unit/1reactivity_vue3_cus2.spec.ts",
-            "start": 906,
-            "length": 7,
-            "messageText": "Duplicate function implementation.",
-            "category": 1,
-            "code": 2393
-          }
-        ]
-      ]
+      "../tests/unit/reactivity_chap1.spec.ts",
+      "../tests/unit/reactivity_chap2.spec.ts",
+      "../tests/unit/reactivity_vanilla.spec.ts"
     ]
   },
   "version": "4.1.5"
