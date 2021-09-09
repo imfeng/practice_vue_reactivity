@@ -1,4 +1,4 @@
-# vue_reactivity
+# vue_sharing
 
 ## Project setup
 ```
