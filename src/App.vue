@@ -1,16 +1,24 @@
 <template>
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <!-- <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" /> -->
+    <div class="app">
+        <Basic>
+        <Lifecycle>
+    </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import Basic from './components/Basic.vue';
+import Lifecycle from './components/Life.vue';
 import HelloWorld from './components/HelloWorld.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld
+    Basic,
+    Lifecycle,
+    // HelloWorld
   },
   setup() {
     return {
