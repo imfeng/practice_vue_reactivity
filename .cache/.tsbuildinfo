@@ -296,9 +296,29 @@
         "signature": "81e397b9e580306adf5cacefa30b0820958e77994d7b5054c60df13282f1deb0",
         "affectsGlobalScope": false
       },
+      "../src/store/store.ts": {
+        "version": "5c4c507a6bdabe4d5d2ebe3a6bcc360a4a00e0bf9591c83354b99e6e91c55e4a",
+        "signature": "8b17e3053606e6f9bedc63ada1db67576592d44930b6d39b83e2739f2dc9e9c5",
+        "affectsGlobalScope": false
+      },
+      "../src/store/globalstore.ts": {
+        "version": "a873c802b5612c586bb305a468ffa80c5ff8ac694ce1d46e3f6f2d805bca8592",
+        "signature": "76cd73196e8cc4e37769a9487379d6bca7b032bf6b3c4abb3f680d8b752cd3ed",
+        "affectsGlobalScope": false
+      },
+      "../src/components/storeexample/storeexample.vue.ts": {
+        "version": "84cba718dbce120c78d52a3200f3e313333d48f06f70a72436659760a93ca2a8",
+        "signature": "b5a3a9c8b1e22202174b6becf8fb2aec2917d3ad11327855577702b8f2b2cd71",
+        "affectsGlobalScope": false
+      },
+      "../src/components/storeexample/storeexamplesub.vue.ts": {
+        "version": "033fc9aa0042d4749ca169f194d904d06fbd664d2666d76ffc59ae008fb22510",
+        "signature": "750ce7f9a6ba69137e8bec00ce4841cb04c8a581fe61a870966b380406f580bf",
+        "affectsGlobalScope": false
+      },
       "../src/app.vue.ts": {
-        "version": "1e995babf943eb56faf7b9c72e84ac46f7725598531f2d9527f0df37280c4c3f",
-        "signature": "082d06a16bdf5f5ce60d2f7a957a26283d095a679a9729f6baafb3730917edb3",
+        "version": "8a5e59b700393327eb187f97c14a427afac045d88fbb0598f9a646130d951995",
+        "signature": "c0ef951d61e9844371bebbfb88e919ec0299e07f000ca3a69b064200d2ba057c",
         "affectsGlobalScope": false
       },
       "../src/main.ts": {
@@ -478,6 +498,8 @@
         "../node_modules/vue/dist/vue.d.ts",
         "../src/components/basic.vue.ts",
         "../src/components/helloworld.vue.ts",
+        "../src/components/storeexample/storeexample.vue.ts",
+        "../src/components/storeexample/storeexamplesub.vue.ts",
         "../src/shims-vue.d.ts"
       ],
       "../src/components/basic.vue.ts": [
@@ -487,6 +509,16 @@
       "../src/components/helloworld.vue.ts": [
         "../node_modules/tslib/tslib.d.ts",
         "../node_modules/vue/dist/vue.d.ts"
+      ],
+      "../src/components/storeexample/storeexample.vue.ts": [
+        "../node_modules/tslib/tslib.d.ts",
+        "../node_modules/vue/dist/vue.d.ts",
+        "../src/store/globalstore.ts"
+      ],
+      "../src/components/storeexample/storeexamplesub.vue.ts": [
+        "../node_modules/tslib/tslib.d.ts",
+        "../node_modules/vue/dist/vue.d.ts",
+        "../src/store/globalstore.ts"
       ],
       "../src/main.ts": [
         "../node_modules/tslib/tslib.d.ts",
@@ -503,6 +535,15 @@
         "../node_modules/tslib/tslib.d.ts"
       ],
       "../src/shims-vue.d.ts": [
+        "../node_modules/vue/dist/vue.d.ts"
+      ],
+      "../src/store/globalstore.ts": [
+        "../node_modules/tslib/tslib.d.ts",
+        "../node_modules/vue/dist/vue.d.ts",
+        "../src/store/store.ts"
+      ],
+      "../src/store/store.ts": [
+        "../node_modules/tslib/tslib.d.ts",
         "../node_modules/vue/dist/vue.d.ts"
       ],
       "../src/utils/once.ts": [
@@ -578,7 +619,16 @@
       "../src/components/helloworld.vue.ts": [
         "../node_modules/vue/dist/vue.d.ts"
       ],
+      "../src/components/storeexample/storeexample.vue.ts": [
+        "../node_modules/vue/dist/vue.d.ts"
+      ],
+      "../src/components/storeexample/storeexamplesub.vue.ts": [
+        "../node_modules/vue/dist/vue.d.ts"
+      ],
       "../src/shims-vue.d.ts": [
+        "../node_modules/vue/dist/vue.d.ts"
+      ],
+      "../src/store/globalstore.ts": [
         "../node_modules/vue/dist/vue.d.ts"
       ],
       "../src/utils/once.ts": [
@@ -652,7 +702,27 @@
       "../node_modules/typescript/lib/lib.esnext.weakref.d.ts",
       "../node_modules/typescript/lib/lib.scripthost.d.ts",
       "../node_modules/vue/dist/vue.d.ts",
-      "../src/app.vue.ts",
+      [
+        "../src/app.vue.ts",
+        [
+          {
+            "file": "../src/app.vue.ts",
+            "start": 2568,
+            "length": 3,
+            "messageText": "Cannot find name 'ref'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "../src/app.vue.ts",
+            "start": 2619,
+            "length": 3,
+            "messageText": "Cannot find name 'ref'.",
+            "category": 1,
+            "code": 2304
+          }
+        ]
+      ],
       "../src/components/basic.vue.ts",
       [
         "../src/components/helloworld.vue.ts",
@@ -675,11 +745,15 @@
           }
         ]
       ],
+      "../src/components/storeexample/storeexample.vue.ts",
+      "../src/components/storeexample/storeexamplesub.vue.ts",
       "../src/main.ts",
       "../src/practice/reactivity_chap1.ts",
       "../src/practice/reactivity_chap2.ts",
       "../src/practice/reactivity_vanilla.ts",
       "../src/shims-vue.d.ts",
+      "../src/store/globalstore.ts",
+      "../src/store/store.ts",
       "../src/utils/once.ts",
       "../tests/unit/reactivity_chap1.spec.ts",
       "../tests/unit/reactivity_chap2.spec.ts",
