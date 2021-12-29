@@ -1,12 +1,14 @@
 <template>
     <div class="basic">
-        <h1>{{ msg }}</h1>
+        <h1>{{ msg }},num=  {{ num }}</h1>
         <p>Capacity: {{ capacity }}</p>
+        <p>watch Capacity: {{ subCapacity }}</p>
 
         <button v-on:click="increaseCapacity()">
             Increase Capacity
         </button>
-
+        <!-- <slot name="slot1"></slot>
+        <slot name="slot2"></slot> -->
     </div>
 </template>
 
@@ -25,12 +27,20 @@ export default defineComponent({
       default: () => 0
     }
   },
-  setup(props, context) {
-    console.log(props.num);
-    console.log(props.msg);
+  setup(props, { attrs, slots, emit }) {
+    console.log(`props.num=${props.num}`);
+    console.log(`props.msg=${props.msg}`);
+    console.log('attrs=', attrs);
+    console.log('slots=', slots);
+
+    watch(attrs, (a, b) => {
+      console.log('attr a=', a);
+    });
 
     // ref data
     const capacity = ref(3);
+    const subCapacity = ref(0);
+
     const attending = ref(['Felix', 'Bell', 'Apple']);
     // The Reactive Syntax
     // const event = reactive({
@@ -41,12 +51,55 @@ export default defineComponent({
     // Methods
     const increaseCapacity = () => {
       capacity.value++;
+      emit('customEvent', { foo: 'bar' });
     };
     function increaseCapacityN() {
       capacity.value++;
     }
 
+    const capacity2 = ref(66);
+    const obj = ref({
+      a: {
+        b: 123
+      },
+      c: 66
+    });
+    setTimeout(() => {
+      // obj.value.a.b = 666;
+      // obj.value.c = 77;
+      obj.value = {
+        a: {
+          b: 666
+        },
+        c: 777
+      };
+      console.log('change');
+    }, 5000);
+    watch([capacity, obj], ([n1, n2], oldVal) => {
+      subCapacity.value = n1;
+      console.log(obj.value);
+      console.log(`subCapacity=${subCapacity.value}`);
+    }, {
+      flush: 'pre',
+      immediate: false,
+      deep: false
+      // onTrigger(e) {
+      //   debugger;
+      // },
+      // onTrack(e) {
+      //   debugger;
+      // }
+    });
+
+    const stopWatch = watchEffect(() => {
+
+    }, {
+      flush: 'sync'
+
+    });
+
     return {
+      subCapacity,
       // ...toRefs(event),
       // event,
       capacity,

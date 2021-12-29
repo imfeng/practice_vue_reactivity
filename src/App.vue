@@ -1,81 +1,46 @@
 <template>
-    <img alt="Vue logo" src="./assets/logo.png">
-    <div class="live-cycle-cont">
-
-        <button v-on:click="toggleLifeCycleExample">
-            Normal LifeCycleExample
-        </button>
-        <button v-on:click="toggleLifeCycleExampleKeepAlive">
-            Keep-alive LifeCycleExample
-        </button>
-        <!-- <LifeCycleExample
-
-            v-bind:name="'Normal LifeCycleExample'"
-            v-if="LifeCycleExample"
-        ></LifeCycleExample>
-        <KeepAlive>
-            <LifeCycleExample v-bind:name="'Keep-alive LifeCycleExample'" v-if="LifeCycleExampleKeepAlive"></LifeCycleExample>
-        </KeepAlive> -->
-        <LifeCycleExampleV3
-
-            v-bind:name="'Normal LifeCycleExampleV3'"
-            v-if="LifeCycleExample"
-        ></LifeCycleExampleV3>
-        <KeepAlive>
-            <LifeCycleExampleV3 v-bind:name="'Keep-alive LifeCycleExampleV3'" v-if="LifeCycleExampleKeepAlive"></LifeCycleExampleV3>
-        </KeepAlive>
+    <div class="app">
+        <button
+            v-on:click="testattrFunc"
+        >testattrFunc {{ testattr }}</button>
+        <Basic
+            v-bind:msg="'setup tutorial'"
+            v-bind:testattr="testattr"
+            v-bind:num="testattr"
+            v-on:customEvent="triggerBasic($event)"
+        >
+            <!-- <template v-slot:slot1>
+                <h1>HI</h1>
+            </template> -->
+        </Basic>
+    <!-- <Lifecycle /> -->
     </div>
-    <!-- VUE STORE -->
-    <!-- <div class="flex-box">
-        <StoreExample name="1" v-bind:data="{ a: 'foo' }">
-            <StoreExampleSub name="1-1">
-                <StoreExampleSub name="1-1-1"></StoreExampleSub>
-            </StoreExampleSub>
-            <StoreExampleSub name="1-2"></StoreExampleSub>
-        </StoreExample>
-        <StoreExample name="2" v-bind:data="{ a: 'bar' }">
-            <StoreExampleSub name="2-1"></StoreExampleSub>
-            <StoreExampleSub name="2-2"></StoreExampleSub>
-        </StoreExample>
-    </div> -->
 </template>
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
-import LifeCycleExample from './components/LifeCycleExample/LifeCycleExample.vue';
-import LifeCycleExampleV3 from './components/LifeCycleExample/LifeCycleExampleV3.vue';
-import StoreExample from './components/StoreExample/StoreExample.vue';
-import StoreExampleSub from './components/StoreExample/StoreExampleSub.vue';
+import Basic from './components/Basic.vue';
+import Lifecycle from './components/Lifecycle.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
-    // Basic,
-    // Lifecycle,
-    // HelloWorld
-    // HelloWorld,
-    // StoreExample,
-    // StoreExampleSub,
-    LifeCycleExample,
-    LifeCycleExampleV3
+    Basic,
+    Lifecycle
   },
   setup() {
-    const LifeCycleExample = ref(false);
-    const LifeCycleExampleKeepAlive = ref(false);
-
-    const toggleLifeCycleExample = () => {
-      LifeCycleExample.value = !LifeCycleExample.value;
-    };
-    const toggleLifeCycleExampleKeepAlive = () => {
-      LifeCycleExampleKeepAlive.value = !LifeCycleExampleKeepAlive.value;
+    const triggerBasic = (e: any) => {
+      console.log('triggerBasic', e);
     };
 
+    const testattr = ref(1);
+    const testattrFunc = () => {
+      testattr.value += 1;
+    };
     return {
-      LifeCycleExample,
-      LifeCycleExampleKeepAlive,
-      toggleLifeCycleExample,
-      toggleLifeCycleExampleKeepAlive
+      testattr,
+      testattrFunc,
+      triggerBasic
     };
   }
 });

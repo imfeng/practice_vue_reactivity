@@ -14,7 +14,7 @@ module.exports = {
   rules: {
     'vue/no-unused-components': 'warn',
     'space-before-function-paren': ['error', 'never'],
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-console': 'off', // process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'semi': ['error', 'always'],
     'quotes': ['error', 'single'],
@@ -26,9 +26,9 @@ module.exports = {
     'no-nested-ternary': 'warn',
     'import/no-dynamic-require': 'off',
     'global-require': 'off',
-    'no-console': ['warn', {
-      allow: ['warn', 'error']
-    }],
+    // 'no-console': ['warn', {
+    //   allow: ['warn', 'error']
+    // }],
     'no-debugger': 'warn',
     'no-bitwise': 'off',
     'no-shadow': 'off',
@@ -164,6 +164,7 @@ module.exports = {
       enums: false,
       typedefs: false,
     }],
+    '@typescript-eslint/no-empty-function': 'warn'
   },
   overrides: [{
 
