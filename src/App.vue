@@ -1,32 +1,58 @@
 <template>
     <div class="app">
-        <button
-            v-on:click="testattrFunc"
-        >testattrFunc {{ testattr }}</button>
-        <Basic
-            v-bind:msg="'setup tutorial'"
-            v-bind:testattr="testattr"
-            v-bind:num="testattr"
-            v-on:customEvent="triggerBasic($event)"
+
+        <!-- Composition API Chap 1: Setup -->
+        <Setup
+            msg="I am Setup"
+            attr1="123"
+            attr2="456"
+            v-on:customEvent="onSetupCustomEvent($event)"
         >
-            <!-- <template v-slot:slot1>
-                <h1>HI</h1>
-            </template> -->
-        </Basic>
+            <template v-slot:slot1>
+                <p>SLOT1</p>
+            </template>
+            <template v-slot:slot2>
+                <p>SLOT2</p>
+            </template>
+
+        </Setup>
+        <p>App: setupCustomEvent = {{ setupCustomEvent }}</p>
+
+        <hr>
+
+        <!--  -->
+        <!-- <Properties></Properties> -->
+
+        <!-- <Modularizing></Modularizing> -->
+        <Reactivity></Reactivity>
     <!-- <Lifecycle /> -->
     </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue';
+import { defineComponent, computed, ref } from 'vue';
 import Basic from './components/Basic.vue';
+import Modularizing from './components/Composition/Modularizing.vue';
+import Properties from './components/Composition/Properties.vue';
+import Reactivity from './components/Composition/Reactivity.vue';
+import Setup from './components/Composition/Setup.vue';
 import Lifecycle from './components/Lifecycle.vue';
-
+const components = {
+  Setup,
+  Basic,
+  Lifecycle,
+  Properties,
+  Modularizing,
+  Reactivity
+};
 export default defineComponent({
   name: 'App',
-  components: {
-    Basic,
-    Lifecycle
+  components,
+  props: {
+    msg: {
+      type: String,
+      default: () => ''
+    }
   },
   setup() {
     const triggerBasic = (e: any) => {
@@ -37,7 +63,15 @@ export default defineComponent({
     const testattrFunc = () => {
       testattr.value += 1;
     };
+
+    const setupCustomEvent = ref({});
+    const onSetupCustomEvent = (e: any) => {
+      console.log('onSetupCustomEvent', e);
+      setupCustomEvent.value = e;
+    };
     return {
+      onSetupCustomEvent,
+      setupCustomEvent,
       testattr,
       testattrFunc,
       triggerBasic
