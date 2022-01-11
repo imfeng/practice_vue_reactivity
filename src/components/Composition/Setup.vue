@@ -2,6 +2,7 @@
     <div class="basic">
         <h1>SETUP Component</h1>
         <pre>props.msg = {{ msg }}</pre>
+        <pre>props.attr1 = {{ attr1 }}</pre>
         <pre>attrs = {{ attrs }}</pre>
         <pre>slots = {{ Object.keys(slots) }}</pre>
 
@@ -24,13 +25,17 @@ export default defineComponent({
     msg: {
       type: String,
       default: () => ''
+    },
+    attr1: {
+      type: Number,
+      default: () => 0
     }
   },
-  setup(props, context) {
+  setup(props, context) { // created
     console.log('=========== START SETUP COMPONENT ==========');
     console.log(`props.msg=${props.msg}`);
 
-    console.log('attrs=', context.attrs.value);
+    console.log('attrs=', context.attrs);
     console.log('slots=', context.slots);
     console.log('context.emit=', context.emit);
 

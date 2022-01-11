@@ -291,29 +291,29 @@
         "signature": "834e4ed626a605dbcdc7acd7fda898fd401cdfb8dbb190ba492e7e8e02234c03",
         "affectsGlobalScope": false
       },
-      "../src/components/composition/modularizing.vue.ts": {
-        "version": "92611029b187893872b176b5abb10354a73c12da994102c918ae8ec93af7817b",
-        "signature": "50917f9f5a160a255ca25a3d19ec7a364a72273fc3afc785a36ade9aa6528550",
-        "affectsGlobalScope": false
-      },
-      "../src/components/composition/properties.vue.ts": {
-        "version": "fa3cebdc0ec4d86ac88f967225de8e433e5d02a99e1451f7e689fcca4ff8cf1c",
-        "signature": "b2449a9dd50c0590c5fa42e6e5f4e326b695e0a30963ad1f89980f845e9e94af",
-        "affectsGlobalScope": false
-      },
       "../src/components/composition/usemoviespace.ts": {
         "version": "768434254692f2c8615f05ecc64f231b6bd7653bf5ee3e1de3ebc88b135ddf30",
         "signature": "2dd365687f3884900d40c5ea46d9e3cc8181dcf656524353848c8371ea857590",
         "affectsGlobalScope": false
       },
+      "../src/components/composition/modularizing.vue.ts": {
+        "version": "04a70d0f4397965feca243ad94c14d26c5f6b8f70ff31b2eceb41244e730a5ee",
+        "signature": "50917f9f5a160a255ca25a3d19ec7a364a72273fc3afc785a36ade9aa6528550",
+        "affectsGlobalScope": false
+      },
+      "../src/components/composition/properties.vue.ts": {
+        "version": "3375b764e5f13b40f19e9060b78a3f339a992f2a7c14b069a57fb1d97f37435b",
+        "signature": "5d8e2c46dfbac8e8e8805b4a92e95a1515c3d201db2e7b49972556957df232a9",
+        "affectsGlobalScope": false
+      },
       "../src/components/composition/reactivity.vue.ts": {
-        "version": "2b3a5f9d29d67422bbd0b9e1ce210f6ed93871fde24e4e92b108556ee4551ef7",
+        "version": "ceea7de7821064472550ee2760e06f810c7dbb102b0e7ed59265234f4ee88799",
         "signature": "41b64f30bf5196869ddf467e288165daf5545b19199db40d370a91454a2691f9",
         "affectsGlobalScope": false
       },
       "../src/components/composition/setup.vue.ts": {
-        "version": "b04d23b54d5f4e34e76c76f8090a1a82c6904cf6e54b7c8637bf38dbf92a0465",
-        "signature": "77b697784aa4f66400cfba2293120aca29f0eca90ad2d4d0a89f295af09d7176",
+        "version": "0c9b899b0c042da7bfd5f92c6a3d64216f357bf9fbf8835c17f431a2048663dc",
+        "signature": "5e8af880a9c578804414dc5a97608d2cfe8fb6ff2554af2cb61e11fa099caa59",
         "affectsGlobalScope": false
       },
       "../src/components/lifecycle.vue.ts": {
@@ -322,8 +322,8 @@
         "affectsGlobalScope": false
       },
       "../src/app.vue.ts": {
-        "version": "5eb37a26458f9b4b7951a36a003508d7057a3e7e82b0e9e77a8e651519cfeb0b",
-        "signature": "d2613f3ebfd24e87d7759f85a40e40f189382f4c76132e8a0a9b1ba600ea5713",
+        "version": "3bc278ac983f44657831992050adc8e6d54757916b7c3e4b2b6376b3cca0dfd1",
+        "signature": "f2d7c8ffa62c991d1641a8318154b06aadfb20e2c03e5f88d4a4a2eda76cc460",
         "affectsGlobalScope": false
       },
       "../src/main.ts": {
@@ -568,7 +568,8 @@
       ],
       "../src/components/composition/modularizing.vue.ts": [
         "../node_modules/tslib/tslib.d.ts",
-        "../node_modules/vue/dist/vue.d.ts"
+        "../node_modules/vue/dist/vue.d.ts",
+        "../src/components/composition/usemoviespace.ts"
       ],
       "../src/components/composition/properties.vue.ts": [
         "../node_modules/tslib/tslib.d.ts",

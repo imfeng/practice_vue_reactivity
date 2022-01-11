@@ -4,6 +4,9 @@
         <pre>count = {{ count }}</pre>
         <pre>countComputed = {{ countComputed }}</pre>
         <pre>countReactive = {{ countReactive }}</pre>
+        <pre>cnt = {{ cnt }}</pre>
+        <pre>others = {{ others }}</pre>
+
         <pre>countReadOnly = {{ countReadOnly }}</pre>
 
         <pre>cnt = {{ cnt }}</pre>
@@ -16,6 +19,7 @@
         </div>
 
         <pre>customCount = {{ customCount }}</pre>
+        <p>customeComputed = {{ customeComputed }}</p>
     </div>
 </template>
 
@@ -33,36 +37,43 @@ export default defineComponent({
   setup() {
     console.log('=========== START Properties COMPONENT ==========');
     const count = ref(0);
+
     const countComputed = computed(() => count.value * 2);
-    const countReactive = {
-      cnt: 0,
+    const countReactive = reactive({
+      cnt: 0, /// => const cnt = ref(...)
       others: 0
-      // countComputed
-    };
-    const countReadOnly = readonly({
-      cnt: 0
     });
 
-    // const customCount = useDebouncedRef(0, 1000);
+    const countReadOnly = readonly({ cnt: 0 });
 
+    const customCount = useDebouncedRef(0, 1000);
+    const customeComputed = computed(() => {
+      return customCount.value;
+    });
+
+    const a = toRefs(countReactive);
+    a.cnt.value += 1;
     const addCount = () => {
       count.value++;
-      countReactive.cnt++;
+      // countReactive.cnt++;
+      // a.cnt.value += 1;
       countReactive.others++;
-      // customCount.value++;
+      customCount.value++;
+      console.log('customCount.value', customCount.value);
       // countReadOnly.cnt++;
     };
-    // const a = toRefs(countReactive);
-    // a.cnt.value += 1;
+
     console.log('=========== END Properties COMPONENT ==========');
     return {
-      count,
+      count, // ref
       countComputed,
       countReactive,
       countReadOnly,
-      // customCount,
+      customCount,
       addCount,
-      ...toRefs(countReactive)
+      ...toRefs(countReactive),
+
+      customeComputed
 
     };
   }
@@ -73,14 +84,14 @@ function useDebouncedRef(value: number, delay = 200) {
     const timeout = ref(0);
     return {
       get() {
-        track();
+        track(); // 訂閱事件，當 set 發生時 去call 自己當前的 effect (computed function)
         return value;
       },
       set(newValue: number) {
         clearTimeout(timeout.value);
         timeout.value = setTimeout(() => {
           value = newValue;
-          trigger();
+          trigger(); // trigger
         }, delay);
       }
     };

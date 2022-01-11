@@ -2,10 +2,11 @@
     <div class="app">
 
         <!-- Composition API Chap 1: Setup -->
-        <Setup
+        <!-- <Setup
             msg="I am Setup"
-            attr1="123"
-            attr2="456"
+            v-bind:attr1="customAttr"
+            v-bind:attr2="customAttr"
+
             v-on:customEvent="onSetupCustomEvent($event)"
         >
             <template v-slot:slot1>
@@ -14,11 +15,14 @@
             <template v-slot:slot2>
                 <p>SLOT2</p>
             </template>
+            <template v-slot:slot3>
+                <p>SLOT2</p>
+            </template>
 
         </Setup>
         <p>App: setupCustomEvent = {{ setupCustomEvent }}</p>
 
-        <hr>
+        <hr> -->
 
         <!--  -->
         <!-- <Properties></Properties> -->
@@ -69,7 +73,14 @@ export default defineComponent({
       console.log('onSetupCustomEvent', e);
       setupCustomEvent.value = e;
     };
+
+    const customAttr = ref(0);
+    // setInterval(() => {
+    //   customAttr.value += 1;
+    // }, 500);
     return {
+      customAttr,
+
       onSetupCustomEvent,
       setupCustomEvent,
       testattr,

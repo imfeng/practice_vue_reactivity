@@ -38,9 +38,13 @@ async function delay(time = 1000) {
 }
 
 async function fakeApiValidAttending(name: string) {
-  const validAttending = ['Bell', 'Louis', 'Felix'].map(v => v.toLowerCase());
+  const validAttending = ['Bell', 'Louis', 'Felix', 'Una'].map(v => v.toLowerCase());
+  if (name === 'Un') {
+    await delay(2000);
+  }
   await delay(1000);
-  return Promise.resolve(validAttending.includes(name?.toLowerCase()));
+  const result = validAttending.includes(name?.toLowerCase());
+  return Promise.resolve(result);
 }
 
 const useFakeApiValidAttending = function(name: string) {
@@ -69,21 +73,28 @@ export default defineComponent({
   setup(props, context) {
     console.log('=========== START Reactivity COMPONENT ==========');
 
-    const { capacity, attending, spacesLeft, inputAttend, increaseCapacity, addAttending } = useMovieSpace(4);
+    const {
+      capacity, attending, spacesLeft, inputAttend,
+      increaseCapacity, addAttending
+    } = useMovieSpace(4);
 
     const isValidName = ref(false);
     const isValidLoading = ref(false);
-    watch(inputAttend, async(newVal, oldVal) => {
-      isValidLoading.value = true;
-      isValidName.value = await fakeApiValidAttending(newVal);
-      isValidLoading.value = false;
-    });
-
-    // watchEffect((onInvalidate) => {
+    // watch(inputAttend, async(newVal, oldVal) => {
     //   isValidLoading.value = true;
     //   isValidName.value = await fakeApiValidAttending(newVal);
     //   isValidLoading.value = false;
     // });
+
+    const stopFunc = watchEffect(async(onInvalidate) => {
+      isValidLoading.value = true;
+      isValidName.value = await fakeApiValidAttending(inputAttend.value);
+      isValidLoading.value = false;
+
+      if (isValidName.value) {
+        stopFunc();
+      }
+    });
 
     console.log('=========== END Reactivity COMPONENT ==========');
     return {
